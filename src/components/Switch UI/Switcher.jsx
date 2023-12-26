@@ -6,7 +6,7 @@ import { DarkModeSwitch } from "react-toggle-dark-mode";
 export default function Switcher() {
   const [colorTheme, setTheme] = useDarkSide();
   const [darkSide, setDarkSide] = useState(
-    colorTheme === "light" ? true : false
+    colorTheme === "dark" ? true : false
   );
 
   const toggleDarkMode = (checked) => {
@@ -20,7 +20,7 @@ export default function Switcher() {
         <DarkModeSwitch
           checked={darkSide}
           onChange={toggleDarkMode}
-          size={40}
+          size={27}
         />
         
       </div>
