@@ -51,5 +51,19 @@
     "t2":"HALVA.TJ",
     "t3": "MIR",
     "t4": "OVOZI TOJIK"
+  },
+  "signUp":{
+    "register":"Registration form",
+    "name":"First name",
+    "placeholderName":"Enter your first name",
+    "surname":"Last name",
+    "placeholderSurname":"Enter your last name",
+    "email":"Email",
+    "placeholderEmail":"Enter your email",
+    "password":"Password",
+    "placeholderPassword":"Enter your password",
+    "confPassword":"Confirm password",
+    "placeholderConfPassword":"Enter your written password",
+    "btnSignUp":"Sign Up"
   }
 }
