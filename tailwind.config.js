@@ -12,6 +12,10 @@ export default {
 
         xl: "1280px",
       },
+      backgroundImage: {
+        lightImg: "url(../src/assets/logo-header_dark.svg)",
+        darkImg: "url(../src/assets/logo-header_light.svg)",
+      },
     },
   },
   darkMode: "class",

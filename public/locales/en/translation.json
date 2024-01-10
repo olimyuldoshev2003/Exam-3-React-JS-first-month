@@ -1,7 +1,7 @@
 {
-  "language": "Language",
-  "english": "English",
-  "russian": "Russian",
+  "language": "Lg",
+  "english": "En",
+  "russian": "Ru",
   "h": {
     "t1": "Kamil Nurmatov",
     "t2": "Home",
@@ -25,7 +25,7 @@
     "t5": "Country",
     "t5Span": "Tajikistan",
     "t6": "Music genre",
-    "t6Span": "Pop,Pop",
+    "t6Span": "Pop, Stage",
     "t7": "MORE"
   },
   "s3": {
@@ -34,7 +34,7 @@
   "s4": {
     "t1": "PROFESSIONS",
     "t2": "INVENTOR",
-    "t3": "Singer",
+    "t3": "SINGER",
     "t4": "SCIENTIST",
     "t5": "ATHLETE",
     "t6": "ENTREPRENEUR"
@@ -51,19 +51,5 @@
     "t2":"HALVA.TJ",
     "t3": "MIR",
     "t4": "OVOZI TOJIK"
-  },
-  "signUp":{
-    "register":"Registration form",
-    "name":"First name",
-    "placeholderName":"Enter your first name",
-    "surname":"Last name",
-    "placeholderSurname":"Enter your last name",
-    "email":"Email",
-    "placeholderEmail":"Enter your email",
-    "password":"Password",
-    "placeholderPassword":"Enter your password",
-    "confPassword":"Confirm password",
-    "placeholderConfPassword":"Enter your written password",
-    "btnSignUp":"Sign Up"
   }
 }

@@ -31,16 +31,21 @@ import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 
 //For AOS animation
-// import AOS from "aos";
-// import "aos/dist/aos.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 //For images
-import logoHeader from "./assets/logo-header.svg";
-import imgS1 from "./assets/pic_s1.svg";
-import img1S5 from "./assets/Rectangle 12.png";
+// import imgS1 from "./assets/2Y3A9202.JPG";
+// import img1S5 from "./assets/IMG_1304.JPG";
+// import img2S5 from "./assets/IMG_1306.JPG";
+// import img3S5 from "./assets/IMG_1305.JPG";
+
+import imgS1 from "./assets/fotoONe.svg";
+import imgS2 from "./assets/twofoto.svg";
+import img1S5 from "./assets/ecoplus+.svg";
 import img2S5 from "./assets/Rectangle 13.png";
 import img3S5 from "./assets/Rectangle 15.png";
-import img4S5 from "./assets/Rectangle 14.png";
+import img4S5 from "./assets/20230708_215039_0000.png";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -50,9 +55,9 @@ function App() {
   };
 
   //For AOS animation
-  // useEffect(() => {
-  //   AOS.init();
-  // }, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
 
   const [menuClass, setMenuClass] = useState("sm:hidden");
   const [showMenu, setShowMenu] = useState(false);
@@ -61,11 +66,9 @@ function App() {
   const [buttonMore, setButtonMore] = useState(false);
   const [classButtonMore, setClassButtonMore] = useState("button_unclicked");
 
-  const [modalSignUp, setModalSignUp] = useState(false);
 
   function showingMenu() {
-    setShowMenu(!showMenu);
-    if (showMenu === true) {
+    if (!showMenu) {
       setMenuClass("sm:block");
       setClassAnimation("clicked");
       setChangeMenu("burger_menu_clicked");
@@ -77,17 +80,12 @@ function App() {
     setShowMenu(!showMenu);
   }
 
-  function openModalSignUp() {
-    setModalSignUp(true);
-  }
-
   function handleClose() {
     setModalSignUp(false);
   }
 
   function showMoreInformation() {
-    // setButtonMore(!buttonMore);
-    if (buttonMore === true) {
+    if (!buttonMore) {
       setClassButtonMore("button_clicked");
     } else {
       setClassButtonMore("button_unclicked");
@@ -99,17 +97,17 @@ function App() {
     <div className="sm:px-[20px] lg:px-[60px] bg-[#000] dark:bg-[#fff]">
       <header className="header flex justify-between items-center py-[10px] lg:rounded-[30px] sm:rounded-[30px_30px_0_0]">
         <div className="h_block_1 flex items-center gap-[21px]">
-          <img src={logoHeader} alt="" />
-          <h1 className="sm:hidden md:block text-[#fff] text-[22px] font-[400] dark:text-[#000]">
+          <div className="logo_header bg-lightImg dark:bg-darkImg w-[86px] h-[72px] bg-no-repeat bg-[100%]"></div>
+          <h1 className="sm:hidden md:block text-[#fff] text-[22px] font-[400] dark:text-[#000] rye duration-300">
             {t("h.t1")}
           </h1>
         </div>
         <div className="h_block_2 flex items-center gap-4">
           <nav className="navbar sm:hidden lg:block">
-            <ul className="text-[#fff] text-[17px] font-[400] flex items-center lg:gap-6 dark:text-[#000]">
+            <ul className="text-[#fff] text-[17px] font-[400] flex items-center lg:gap-6 dark:text-[#000] rye duration-300">
               <li>
                 <a
-                  className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline"
+                  className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline duration-300"
                   href="#"
                 >
                   {t("h.t2")}
@@ -117,7 +115,7 @@ function App() {
               </li>
               <li>
                 <a
-                  className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline"
+                  className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline duration-300"
                   href="#biography"
                 >
                   {t("h.t3")}
@@ -125,16 +123,16 @@ function App() {
               </li>
               <li>
                 <a
-                  className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline"
-                  href=""
+                  className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline duration-300"
+                  href="#aboutMe"
                 >
                   {t("h.t4")}
                 </a>
               </li>
               <li>
                 <a
-                  className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline"
-                  href=""
+                  className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline duration-300"
+                  href="#projects"
                 >
                   {t("h.t5")}
                 </a>
@@ -142,7 +140,7 @@ function App() {
               <li>
                 <a
                   className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline"
-                  href=""
+                  href="#contacts"
                 >
                   {t("h.t6")}
                 </a>
@@ -157,20 +155,29 @@ function App() {
               onChange={(event) => changeLanguage(event.target.value)}
               name=""
               id=""
-              className="outline-none text-[white] border-[1px] bg-[black] border-[white] dark:bg-[#fff] dark:border-[#000] text-[15px] dark:text-[#000] rounded-[10px] dark:bg-[#b0d8d1]"
+              className="outline-none text-[white] bg-[black] border-none dark:bg-[#fff] text-[15px] dark:text-[#000] rounded-[10px] rye cursor-pointer duration-300"
             >
-              <option className="text-[#fff] dark:text-[#000]" value="">
+              <option
+                className="text-[#fff] dark:text-[#000] duration-300"
+                value=""
+              >
                 {t("language")}
               </option>
-              <option className="text-[#fff] dark:text-[#000]" value="ru">
+              <option
+                className="text-[#fff] dark:text-[#000] duration-300"
+                value="ru"
+              >
                 {t("russian")}
               </option>
-              <option className="text-[#fff] dark:text-[#000]" value="en">
+              <option
+                className="text-[#fff] dark:text-[#000] duration-300"
+                value="en"
+              >
                 {t("english")}
               </option>
             </select>
             <div
-              className="for_mobile_size sm:flex sm:flex-col sm:gap-[10px] lg:hidden"
+              className="for_mobile_size sm:flex sm:flex-col sm:gap-[10px] lg:hidden cursor-pointer"
               onClick={() => showingMenu()}
             >
               <div
@@ -189,169 +196,105 @@ function App() {
       <nav
         className={`navbar_for_mobile_size  lg:hidden py-[10px] ${menuClass} ${classAnimation}`}
       >
-        <ul className="text-[#fff] dark:text-[#000] text-[20px] font-[400] flex flex-col gap-2 px-[20px]">
+        <ul className="text-[#fff] dark:text-[#000] text-[20px] font-[400] flex flex-col gap-2 px-[20px] rye">
           <li className="">
-            <a href="#">{t("h.t2")}</a>
+            <a
+              href="#"
+              className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline duration-300"
+            >
+              {t("h.t2")}
+            </a>
           </li>
           <li className="">
-            <a href="#biography">{t("h.t3")}</a>
+            <a
+              href="#biography"
+              className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline duration-300"
+            >
+              {t("h.t3")}
+            </a>
           </li>
           <li className="">
-            <a href="">{t("h.t4")}</a>
+            <a
+              href="#aboutMe"
+              className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline duration-300"
+            >
+              {t("h.t4")}
+            </a>
           </li>
           <li className="">
-            <a href="">{t("h.t5")}</a>
+            <a
+              href="#projects"
+              className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline duration-300"
+            >
+              {t("h.t5")}
+            </a>
           </li>
           <li className="">
-            <a href="">{t("h.t6")}</a>
+            <a
+              href="#contacts"
+              className="hover:text-[gold] dark:hover:text-[blue] hover:duration-300 hover:underline duration-300"
+            >
+              {t("h.t6")}
+            </a>
           </li>
         </ul>
       </nav>
-      <main>
+      <main className="pt_serif">
         <section className="section_1 flex items-center media_query_s_1 pb-[80px] mt-[50px]">
           <div className="s_block_1 flex flex-col items-start gap-6">
-            <h1 className="text-[#FFAB07] lg:text-[81px] font-[700] md:text-[60px] sm:text-[30px]">
+            <h1 className="text-[#FFAB07] lg:text-[81px] font-[700] md:text-[60px] sm:text-[30px] duration-300">
               {t("h.t1")}
             </h1>
-            <h4 className="text-[#FFAB07] lg:text-[38px] font-[700] md:text-[26px] sm:text-[17px]">
+            <h4 className="text-[#FFAB07] lg:text-[38px] font-[700] md:text-[26px] sm:text-[17px] duration-300">
               {t("s1.t2")}
             </h4>
-            <button
-              className="text-[#FFFFFF] lg:text-[23px] md:text-[18px] sm:text-[13px] font-[400] lg:p-[13px_48px] sm:p-[10px_40px] border-[5px] border-[solid] border-[#fff] outline-none rounded-[100px] dark:text-[#000] dark:border-[#000]"
-              onClick={() => openModalSignUp()}
-            >
+            <button className="text-[#FFFFFF] lg:text-[23px] md:text-[18px] sm:text-[13px] font-[400] lg:p-[13px_48px] sm:p-[10px_40px] border-[5px] border-[solid] border-[#fff] outline-none rounded-[100px] dark:text-[#000] dark:border-[#000] duration-300">
               {t("s1.t3")}
             </button>
           </div>
           <div className="s_1_block_2 relative">
-            <img src={imgS1} alt="" />
-            <div className="min_block_1_s_1_b_2 lg:w-[173px] lg:h-[173px] rounded-full bg-[#fff] grid place-items-center border-[5px] border-[solid] border-[#000] absolute lg:right-0 lg:bottom-[-10px] md:w-[123px] md:h-[123px] md:bottom-[10px] md:right-0 sm:w-[85px] sm:h-[85px] sm:bottom-[10px] sm:right-0">
-              <p className="text-[#000000] lg:text-[20px] font-[400] md:text-[16px] sm:text-[11px]">
+            <img src={imgS1} className="w-[627px]" alt="" />
+            <div className="min_block_1_s_1_b_2 lg:w-[173px] lg:h-[173px] rounded-full bg-[#fff] grid place-items-center border-[5px] border-[solid] border-[#000] absolute lg:right-0 lg:bottom-[-10px] md:w-[123px] md:h-[123px] md:bottom-[10px] md:right-0 sm:w-[85px] sm:h-[85px] sm:bottom-[10px] sm:right-0 duration-300">
+              <p className="text-[#000000] lg:text-[20px] font-[400] md:text-[16px] sm:text-[11px] duration-300">
                 {t("s1.t4")}
               </p>
             </div>
-            <div className="min_block_2_s_1_b_2 rounded-full bg-[#000] dark:bg-[#fff] inline-block border-[3px] border-[solid] border-[#fff] dark:border-[#000] p-[5px] absolute lg:bottom-[-80px] right-[30px] md:bottom-[-70px] sm:bottom-[-70px]">
-              <div className="flex_elements_s_1 flex items-center gap-2">
+            <div className="min_block_2_s_1_b_2 rounded-full bg-[#000] dark:bg-[#fff] inline-block border-[3px] border-[solid] border-[#fff] dark:border-[#000] p-[5px] absolute lg:bottom-[-80px] right-[30px] md:bottom-[-70px] sm:bottom-[-70px] duration-300">
+              <div className="flex_elements_s_1 flex items-center gap-2 duration-300">
                 <p className=" text-[#fff] dark:text-[#000] lg:text-[30px] md:text-[19px] font-[400] sm:text-[14px]">
                   {t("s1.t5")}
                 </p>
-                <div className="little_block_s_1 flex justify-center items-center lg:w-[125px] lg:h-[125px] rounded-[125px] border-[5px] border-[solid] border-[#000] md:w-[100px] md:h-[100px] sm:w-[90px] sm:h-[90px] bg-[#fff]">
-                  <p className="lg:text-[25px] font-[400] md:text-[18px] sm:text-[13px]">
+                <div className="little_block_s_1 flex justify-center items-center lg:w-[125px] lg:h-[125px] rounded-[125px] border-[5px] border-[solid] border-[#000] md:w-[100px] md:h-[100px] sm:w-[90px] sm:h-[90px] bg-[#fff] duration-300">
+                  <p className="lg:text-[25px] font-[400] md:text-[18px] sm:text-[13px] duration-300">
                     {t("s1.t6")}
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <Modal
-            open={modalSignUp}
-            onClose={handleClose}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
-            className="flex justify-center items-center"
-          >
-            <Box className="bg-[#fff] max-w-[300px] rounded-[20px] p-[20px] outline-none flex flex-col gap-4">
-              <h4 className="text-center text-[26px] font-[800]">
-                {t("signUp.register")}
-              </h4>
-              <form action="" className="flex flex-col gap-5">
-                <div className="for_firstName flex flex-col gap-[10px]">
-                  <label
-                    htmlFor=""
-                    className="text-[17px] font-[800] text-[red]"
-                  >
-                    {t("signUp.name")}
-                  </label>
-                  <input
-                    type="text"
-                    className="border-[2px] border-[solid] border-[#000] outline-none p-[5px_25px] rounded-[30px] text-[#000] font-[800] font-[800] placeholder:text-[#000]"
-                    placeholder={t("signUp.placeholderName")}
-                  />
-                </div>
-                <div className="for_lastName flex flex-col gap-[10px]">
-                  <label
-                    htmlFor=""
-                    className="text-[17px] font-[800] text-[red]"
-                  >
-                    {t("signUp.surname")}
-                  </label>
-                  <input
-                    type="text"
-                    className="border-[2px] border-[solid] border-[#000] outline-none p-[5px_25px] rounded-[30px] text-[#000] font-[800] placeholder:text-[#000]"
-                    placeholder={t("signUp.placeholderSurname")}
-                  />
-                </div>
-                <div className="for_email flex flex-col gap-[10px]">
-                  <label
-                    htmlFor=""
-                    className="text-[17px] font-[800] text-[red]"
-                  >
-                    {t("signUp.email")}
-                  </label>
-                  <input
-                    type="email"
-                    className="border-[2px] border-[solid] border-[#000] outline-none p-[5px_25px] rounded-[30px] text-[#000] font-[800] placeholder:text-[#000]"
-                    placeholder={t("signUp.placeholderEmail")}
-                  />
-                </div>
-                <div className="for_password flex flex-col gap-[10px]">
-                  <label
-                    htmlFor=""
-                    className="text-[17px] font-[800] text-[red]"
-                  >
-                    {t("signUp.password")}
-                  </label>
-                  <input
-                    type="password"
-                    className="border-[2px] border-[solid] border-[#000] outline-none p-[5px_25px] rounded-[30px] text-[#000] font-[800] placeholder:text-[#000]"
-                    placeholder={t("signUp.placeholderPassword")}
-                  />
-                </div>
-
-                <div className="for_confirmPassword flex flex-col gap-[10px]">
-                  <label
-                    htmlFor=""
-                    className="text-[17px] font-[800] text-[red]"
-                  >
-                    {t("signUp.confPassword")}
-                  </label>
-                  <input
-                    type="password"
-                    className="border-[2px] border-[solid] border-[#000] outline-none p-[5px_25px] rounded-[30px] text-[#000] font-[800] placeholder:text-[#000]"
-                    placeholder={t("signUp.placeholderConfPassword")}
-                  />
-                </div>
-                <div className="for_button flex justify-center">
-                  <button className="p-[5px_40px] bg-[green] text-[#fff] text-[19px] rounded-[30px]">
-                    Sign Up
-                  </button>
-                </div>
-              </form>
-            </Box>
-          </Modal>
         </section>
         <section className="section_2 mt-[20px] py-[50px]">
           <h1
-            className="text-center text-[#FFAB07] md:text-[66px] sm:text-[50px]"
+            className="text-center text-[#FFAB07] md:text-[66px] sm:text-[50px] duration-300"
             id="biography"
           >
             {t("h.t3")}
           </h1>
-          <h2 className="text-center text-[#FFAB07] md:text-[46px] sm:text-[32px]">
+          <h2 className="text-center text-[#FFAB07] md:text-[46px] sm:text-[32px] duration-300">
             {t("h.t1")}
           </h2>
           <div className="s_2_block mt-[30px] flex items-center media_query_s_2 gap-4">
             <div className="min_block_1_s_2">
-              <img src={imgS1} alt="" />
+              <img src={imgS2} alt="" className="w-[627px]" />
             </div>
             <div className="min_block_2_s_2">
               <div className="birth lg:p-[27px_31.5px] md:p-[14px_26px] sm:p-[10px_20px] border-t-[1px] border-t-[solid] border-t-[#fff] dark:border-t-[#000]">
-                <h1 className="text-[#fff] dark:text-[#000] lg:text-[29px] md:text-[21px] sm:text-[16px] font-[400]">
+                <h1 className="text-[#fff] dark:text-[#000] lg:text-[29px] md:text-[21px] sm:text-[16px] font-[400] duration-300">
                   {t("s2.t3")}: <span>{t("s2.t3Span")}</span>
                 </h1>
               </div>
               <div className="place_of_birth lg:p-[27px_31.5px] md:p-[14px_26px] sm:p-[10px_20px] border-t-[1px] border-t-[solid] border-t[#fff] dark:border-t-[#000]">
-                <h1 className="text-[#fff] dark:text-[#000] lg:text-[25px] md:text-[21px] sm:text-[16px] font-[400] flex items-center gap-3">
+                <h1 className="text-[#fff] dark:text-[#000] lg:text-[25px] md:text-[21px] sm:text-[16px] font-[400] flex items-center gap-3 duration-300">
                   {t("s2.t4")}:
                   <span className="lg:text-[23px] md:text-[19px] sm:text-[17px] max-w-[300px]">
                     {t("s2.t4Span")}
@@ -359,118 +302,118 @@ function App() {
                 </h1>
               </div>
               <div className="country lg:p-[27px_31.5px] md:p-[14px_26px] sm:p-[10px_20px] border-t-[1px] border-t-[solid] border-t-[#fff] dark:border-t-[#000]">
-                <h1 className="text-[#fff] dark:text-[#000] lg:text-[29px] sm:text-[16px] md:text-[21px] font-[400]">
+                <h1 className="text-[#fff] dark:text-[#000] lg:text-[29px] sm:text-[16px] md:text-[21px] font-[400] duration-300">
                   {t("s2.t5")}: <span>{t("s2.t5Span")}</span>
                 </h1>
               </div>
               <div className="type_of_song lg:p-[27px_31.5px] md:p-[14px_26px] sm:p-[10px_20px] border-y-[1px] border-y-[solid] border-y-[#fff] dark:border-y-[#000]">
-                <h1 className="text-[#fff] dark:text-[#000] lg:text-[29px] md:text-[21px] font-[400]">
+                <h1 className="text-[#fff] dark:text-[#000] lg:text-[29px] md:text-[21px] font-[400] duration-300">
                   {t("s2.t6")}: <span>{t("s2.t6Span")}</span>
                 </h1>
               </div>
               <div className="for_btn mt-[40px]">
                 <button
-                  className={`more text-[#fff] dark:text-[#000] lg:text-[30px] md:text-[23px] sm:text-[19px] text-[400] ${classButtonMore}`}
+                  className={`more text-[#fff] dark:text-[#000] lg:text-[30px] md:text-[23px] sm:text-[19px] text-[400] cursor-pointer duration-300 ${classButtonMore}`}
                   onClick={() => showMoreInformation()}
                 >
                   {t("s2.t7")}{" "}
-                  <KeyboardArrowDownIcon className="icon_dropdown" />
+                  <KeyboardArrowDownIcon className="icon_dropdown duration-300" />
                 </button>
               </div>
             </div>
           </div>
         </section>
         <section className="section_3">
-          <p className="text-[#fff] text-[17px] font-[400] dark:text-[#000]">
+          <p className="text-[#fff] text-[17px] font-[400] dark:text-[#000] duration-300">
             {buttonMore ? t("s3.t1") : null}
           </p>
         </section>
         <section className="section_4 mt-[40px]">
-          <h1 className="text-[#ffab07] text-center lg:text-[40px] md:text-[35px] sm:text-[33px] font-[700]">
+          <h1 className="text-[#ffab07] text-center lg:text-[40px] md:text-[26px] sm:text-[33px] font-[700] duration-300">
             {t("s4.t1")}
           </h1>
           <div className="grid_block_s_4 grid md:grid-cols-3 md:grid-rows-3 sm:grid-cols-1 sm:grid-rows-5 mt-[30px]">
             <div className="grid_block_1 md:p-[70px_84px] sm:p-[40px_50px] md:row-start-1 md:row-end-2 md:col-start-1 md:col-end-3 sm:row-start-1 sm:row-end-2 sm:col-start-1 sm:col-end-4">
-              <h1 className="text-[#fff] dark:text-[#000] lg:text-[40px] md:text-[35px] sm:text-[17px] font-[700]">
+              <h1 className="text-[#fff] dark:text-[#000] lg:text-[40px] md:text-[26px] sm:text-[17px] font-[700] duration-300">
                 {t("s4.t2")}
               </h1>
             </div>
             <div className="grid_block_2 md:p-[70px_84px] sm:p-[40px_50px] md:row-start-1 md:row-end-2 md:col-start-3 md:col-end-4 sm:row-start-2 sm:row-end-3 sm:col-start-1 sm:col-end-4">
-              <h1 className="text-[#fff] dark:text-[#000] lg:text-[40px] md:text-[35px] sm:text-[17px] font-[700]">
+              <h1 className="text-[#fff] dark:text-[#000] lg:text-[40px] md:text-[26px] sm:text-[17px]  font-[700] duration-300">
                 {t("s4.t3")}
               </h1>
             </div>
             <div className="grid_block_3 md:p-[70px_84px] sm:p-[40px_50px] md:row-start-2 md:row-end-3 md:col-start-1 md:col-end-2 sm:row-start-3 sm:row-end-4 sm:col-start-1 sm:col-end-4">
-              <h1 className="text-[#fff] dark:text-[#000] lg:text-[40px] md:text-[35px] sm:text-[17px] font-[700]">
+              <h1 className="text-[#fff] dark:text-[#000] lg:text-[40px] md:text-[26px] sm:text-[17px] font-[700] duration-300">
                 {t("s4.t4")}
               </h1>
             </div>
             <div className="grid_block_4 md:p-[70px_84px] sm:p-[40px_50px] md:row-start-2 md:row-end-3 md:col-start-2 md:col-end-4 sm:row-start-4 sm:row-end-5 sm:col-start-1 sm:col-end-4">
-              <h1 className="text-[#fff] dark:text-[#000] lg:text-[40px] md:text-[35px] sm:text-[17px] font-[700]">
+              <h1 className="text-[#fff] dark:text-[#000] lg:text-[40px] md:text-[26px] sm:text-[17px] font-[700] duration-300">
                 {t("s4.t5")}
               </h1>
             </div>
-            <div className="grid_block_5 md:p-[70px_84px] sm:p-[40px_50px] md:row-start-3 md:row-end-4 md:col-start-1 md:col-end-4 sm:row-start-5 sm:row-end-6 sm:col-start-1 sm:col-end-4">
-              <h1 className="text-[#fff] dark:text-[#000] lg:text-[40px] md:text-[35px] sm:text-[17px] font-[700]">
+            <div className="grid_block_5 md:p-[70px_84px] sm:p-[40px_30px] md:row-start-3 md:row-end-4 md:col-start-1 md:col-end-4 sm:row-start-5 sm:row-end-6 sm:col-start-1 sm:col-end-4">
+              <h1 className="text-[#fff] dark:text-[#000] lg:text-[40px] md:text-[26px] sm:text-[17px] font-[700] duration-300">
                 {t("s4.t6")}
               </h1>
             </div>
           </div>
         </section>
-        <section className="section_5 mt-[90px]">
-          <h1 className="text-[#ffab07] text-center lg:text-[40px] md:text-[35px] sm:text-[33px] font-[700]">
+        <section className="section_5 mt-[90px]" id="projects">
+          <h1 className="text-[#ffab07] text-center lg:text-[40px] md:text-[35px] sm:text-[36px] font-[700] duration-300">
             {t("s5.t1")}
           </h1>
           <div className="flex_block_s5 flex justify-center mt-[50px] flex-wrap gap-5">
             <div className="flex_block_1 relative">
-              <p className="text-[#fff] md:text-[50px] sm:text-[32px] font-[700] text-center absolute md:left-[22%] sm:left-[26%]">
+              <p className="text-[#fff] md:text-[50px] sm:text-[32px] font-[700] text-center absolute top-[44%] md:left-[22%] sm:left-[19%] duration-300">
                 {t("s5.t2")}
               </p>
               <img
-                className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%]"
+                className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%] duration-300"
                 src={img1S5}
                 alt=""
               />
             </div>
             <div className="flex_block_2 relative">
-              <p className="text-[#fff] md:text-[50px] sm:text-[32px] font-[700] text-center absolute md:left-[8%] sm:left-[5%]">
+              <p className="text-[#fff] md:text-[50px] sm:text-[32px] font-[700] text-center absolute md:top-[44%] sm:top-[33%] md:left-[8%] sm:left-[10%] duration-300">
                 {t("s5.t3")}
               </p>
               <img
-                className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%]"
+                className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%] duration-300"
                 src={img2S5}
                 alt=""
               />
             </div>
             <div className="flex_block_3 relative">
-              <p className="text-[#fff] md:text-[50px] sm:text-[32px] font-[700] text-center absolute left-[32%]">
+              <p className="text-[#fff] md:text-[50px] sm:text-[32px] font-[700] text-center absolute top-[44%] left-[32%] duration-300">
                 {t("s5.t4")}
               </p>
               <img
-                className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%]"
+                className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%] duration-300"
                 src={img3S5}
                 alt=""
               />
             </div>
             <div className="flex_block_4 relative">
-              <p className="text-[#fff] md:text-[50px] sm:text-[32px] font-[700] text-center absolute md:left-[11.5%] sm:left-[6%]">
+              <p className="text-[#fff] md:text-[50px] sm:text-[27px] font-[700] text-center absolute top-[44%] md:left-[11.5%] sm:left-[6%] duration-300">
                 {t("s5.t5")}
               </p>
               <img
-                className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%]"
+                className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%] duration-300 rounded-[14px]"
                 src={img4S5}
                 alt=""
               />
             </div>
           </div>
         </section>
-        <section className="section_6 mt-[60px]">
-          <h1 className="text-[#ffab07] text-center lg:text-[40px] md:text-[35px] sm:text-[33px] font-[700]">
+        <section className="section_6 mt-[60px]" id="aboutMe">
+          <h1 className="text-[#ffab07] text-center lg:text-[40px] md:text-[35px] sm:text-[33px] font-[700] duration-300">
             {t("s6.t1")}
           </h1>
           <div className="blocks_s_6 mt-[60px] flex flex-col gap-[20px]">
             <div className="block_1_s_6 flex flex-col gap-[10px]">
-              <h1 className="text-[#48249CF0] lg:text-[40px] md:text-[35px] sm:text-[33px] font-[700]">
+              <h1 className="text-[#48249CF0] lg:text-[40px] md:text-[35px] sm:text-[33px] font-[700] duration-300">
                 {t("s6.t2")}
               </h1>
               <iframe
@@ -482,7 +425,7 @@ function App() {
               ></iframe>{" "}
             </div>
             <div className="block_2_s_6 flex flex-col gap-[10px]">
-              <h1 className="text-[#fff] lg:text-[40px] md:text-[35px] sm:text-[33px] font-[700] dark:text-[#000]">
+              <h1 className="text-[#fff] lg:text-[40px] md:text-[35px] sm:text-[33px] font-[700] dark:text-[#000] duration-300">
                 {t("s6.t3")}
               </h1>
               <iframe
@@ -494,7 +437,7 @@ function App() {
               ></iframe>
             </div>
             <div className="block_3_s_6 flex flex-col gap-[10px]">
-              <h1 className="text-[#fff] lg:text-[40px] md:text-[35px] sm:text-[33px] font-[700] dark:text-[#000]">
+              <h1 className="text-[#fff] lg:text-[40px] md:text-[35px] sm:text-[33px] font-[700] dark:text-[#000] duration-300">
                 {t("s6.t4")}
               </h1>
               <iframe
@@ -508,18 +451,15 @@ function App() {
           </div>
         </section>
       </main>
-      <footer className="footer mt-[140px] relative">
-        <button className="footer_button_links button_unclicked_f border-[10.2px] border-solid border-[#ffffff40] dark:border-[#505050]">
-          Contacts
-        </button>
-        <div className="for_links footer_links_unclicked bg-[#00000022] dark:bg-[transparent] border-[10.2px] border-solid border-[#ffffff40] dark:border-[#505050]">
+      <footer className="footer mt-[140px] relative duration-300" id="contacts">
+        <div className="for_links bg-[#00000022] dark:bg-[transparent] border-[10.2px] border-solid border-[#ffffff40] dark:border-[#505050] flex items-center flex-wrap p-[10px] gap-[15px] rounded-[0_120px_120px_0] lg:max-w-[1036px] sm:max-w-[510px] duration-300">
           <a
             href="https://instagram.com/kamilnurmatovv?igshid=MzNlNGNkZWQ4Mg=="
-            className="instagram"
+            className="instagram duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px]"
+              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px] duration-300"
               width="80"
               height="80"
               viewBox="0 0 80 80"
@@ -532,10 +472,13 @@ function App() {
               />
             </svg>
           </a>
-          <a href="https://www.threads.net/@kamilnurmatovv" className="threat">
+          <a
+            href="https://www.threads.net/@kamilnurmatovv"
+            className="threat duration-300"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px]"
+              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px] duration-300"
               width="80"
               height="80"
               viewBox="0 0 80 80"
@@ -558,10 +501,13 @@ function App() {
               </defs>
             </svg>
           </a>
-          <a href="https://www.youtube.com/@Kamilnurmatov" className="youtube">
+          <a
+            href="https://www.youtube.com/@Kamilnurmatov"
+            className="youtube duration-300"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px]"
+              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px] duration-300"
               width="104"
               height="73"
               viewBox="0 0 104 73"
@@ -584,10 +530,10 @@ function App() {
               </defs>
             </svg>
           </a>
-          <a href="https://vk.com/kamilnurmatov" className="vk">
+          <a href="https://vk.com/kamilnurmatov" className="vk duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px]"
+              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px] duration-300"
               width="80"
               height="80"
               viewBox="0 0 80 80"
@@ -603,11 +549,11 @@ function App() {
           </a>
           <a
             href="https://www.facebook.com/people/%D0%9A%D0%B0%D0%BC%D0%B8%D0%BB%D1%8C-%D0%9D%D1%83%D1%80%D0%BC%D0%B0%D1%82%D0%BE%D0%B2/pfbid02BqLuynTKuqyMD8VaykEBcXmAruBf6jVFkNzq5JwfRiZg3qT15oqFup35Ybux5hdUl/?mibextid=ZbWKwL"
-            className="facebook"
+            className="facebook duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px]"
+              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px] duration-300"
               width="80"
               height="80"
               viewBox="0 0 80 80"
@@ -619,10 +565,10 @@ function App() {
               />
             </svg>
           </a>
-          <a href="https://t.me/Kamilrecords" className="telegram">
+          <a href="https://t.me/Kamilrecords" className="telegram duration-300">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px]"
+              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px] rounded-full duration-300"
               width="69"
               height="69"
               viewBox="0 0 69 69"
@@ -637,10 +583,13 @@ function App() {
               />
             </svg>
           </a>
-          <a href="https://www.tiktok.com/explore" className="tiktok">
+          <a
+            href="https://www.tiktok.com/explore"
+            className="tiktok duration-300"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px]"
+              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px] duration-300"
               width="73"
               height="73"
               viewBox="0 0 73 73"
@@ -654,11 +603,11 @@ function App() {
           </a>
           <a
             href="https://twitter.com/Kamilnurmatovv?t=VonsgWwws1RVV8Yh7sEKUw&s=09"
-            className="twitter"
+            className="twitter duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px]"
+              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px] duration-300"
               width="58"
               height="58"
               viewBox="0 0 58 58"
@@ -679,11 +628,11 @@ function App() {
           </a>
           <a
             href="https://ok.ru/profile/593356231482?utm_campaign=android_share&utm_content=profile"
-            className="ok"
+            className="ok duration-300"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px]"
+              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px] duration-300"
               width="80"
               height="80"
               viewBox="0 0 80 80"
@@ -695,10 +644,13 @@ function App() {
               />
             </svg>
           </a>
-          <a href="https://links.freshtunes.com/Oj8OM" className="badlink">
+          <a
+            href="https://links.freshtunes.com/Oj8OM"
+            className="badlink duration-300"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px]"
+              className="lg:w-[70px] lg:h-[70px] sm:w-[30px] sm:h-[30px] duration-300"
               width="80"
               height="80"
               viewBox="0 0 80 80"

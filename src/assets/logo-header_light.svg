@@ -1,0 +1,80 @@
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 468 468">
+  <defs>
+    <style>
+      .cls-1 {
+        letter-spacing: 0em;
+      }
+
+      .cls-2 {
+        fill: url(#_Оранжевый_желтый);
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        stroke-width: 0px;
+      }
+
+      .cls-5 {
+        font-size: 60px;
+      }
+
+      .cls-5, .cls-6 {
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+      }
+
+      .cls-5, .cls-6, .cls-3 {
+        fill: #1d1d1b;
+      }
+
+      .cls-7 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0em;
+      }
+
+      .cls-10 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-6 {
+        font-size: 20px;
+      }
+
+      .cls-4 {
+        fill: #ffed00;
+      }
+
+      .cls-11 {
+        letter-spacing: 0em;
+      }
+    </style>
+    <linearGradient id="_Оранжевый_желтый" data-name="Оранжевый, желтый" x1="0" y1="234" x2="468" y2="234" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffef26"/>
+      <stop offset=".02" stop-color="#fee921"/>
+      <stop offset=".1" stop-color="#fdd70e"/>
+      <stop offset=".19" stop-color="#fdcb03"/>
+      <stop offset=".28" stop-color="#fdc800"/>
+      <stop offset=".67" stop-color="#f18f34"/>
+      <stop offset=".89" stop-color="#e95f32"/>
+      <stop offset="1" stop-color="#e3312d"/>
+    </linearGradient>
+  </defs>
+  <circle class="cls-2" cx="234" cy="234" r="234"/>
+  <g>
+    <path class="cls-4" d="M345.91,321.3c-.39.51-.78,1.01-1.18,1.51l1.77-.9s-.2-.21-.59-.61ZM322.12,122.47l13.38-25.06-20.65,19.59c2.48,1.75,4.91,3.57,7.27,5.47ZM192.02,371l-30.93,28.69c6.13,2.66,12.44,4.98,18.9,6.96l58.71-29.88c-1.96.08-3.94.12-5.92.12-14.16,0-27.84-2.06-40.76-5.89ZM189,370.05c-24.57-7.89-46.23-22.26-63-41.09v42.95h63v-1.86Z"/>
+    <path class="cls-4" d="M413.28,234c0,99.68-80.81,180.49-180.5,180.49-18.37,0-36.09-2.74-52.79-7.84l58.71-29.88c42.94-1.75,81-22.45,106.03-53.96l1.77-.9s-.2-.21-.59-.61c18.66-24.14,29.77-54.43,29.77-87.3,0-45.11-20.9-85.34-53.56-111.53l13.38-25.06-20.65,19.59c-23.22-16.32-51.53-25.9-82.07-25.9-22.78,0-44.32,5.33-63.43,14.81-16.51,8.2-31.21,19.49-43.35,33.12-22.46,25.24-36.11,58.52-36.11,94.97s13.65,69.72,36.11,94.96v42.95h63v-1.86c1,.33,2.01.64,3.02.95l-30.93,28.69c-64.02-27.74-108.81-91.49-108.81-165.69,0-99.69,80.82-180.5,180.5-180.5s180.5,80.81,180.5,180.5Z"/>
+  </g>
+  <g>
+    <path class="cls-3" d="M189,105.91v266h-63v-232.88c12.14-13.63,26.84-24.92,43.35-33.12h19.65Z"/>
+    <path class="cls-3" d="M346.5,321.91l-1.77.9-106.03,53.96-58.71,29.88-58.49,29.76,39.59-36.72,30.93-28.69,67.48-62.59-70.5-72,125.85-119.41,20.65-19.59-13.38,25.06-57.62,107.94c-5.24,0,73.84,82.95,81.41,90.89.39.4.59.61.59.61Z"/>
+  </g>
+  <text class="cls-5" transform="translate(276.07 236.78) rotate(47.41)"><tspan x="0" y="0">amil</tspan></text>
+  <text class="cls-6" transform="translate(204.2 432.93) scale(.89 1)"><tspan x="0" y="0">Камиль </tspan></text>
+  <text class="cls-6" transform="translate(195.39 450.93) scale(.89 1)"><tspan class="cls-8" x="0" y="0">Н</tspan><tspan class="cls-11" x="12.89" y="0">ур</tspan><tspan class="cls-1" x="33.54" y="0">м</tspan><tspan class="cls-7" x="46.21" y="0">а</tspan><tspan class="cls-10" x="55.55" y="0">т</tspan><tspan class="cls-9" x="63.5" y="0">о</tspan><tspan x="74.3" y="0">в</tspan></text>
+</svg>

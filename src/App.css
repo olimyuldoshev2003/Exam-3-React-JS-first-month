@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Rye&display=swap');
+
+.rye {
+  font-family: 'Rye', serif;
+}
+
+.pt_serif {
+  font-family: 'PT Serif', serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -16,15 +30,14 @@
   }
 
   100% {
-    width: 100%;
-
     transform: translateY(0);
+    width: 100%;
     opacity: 1;
   }
 }
 
 .burger_menu_clicked:nth-child(1) {
-  transform: rotate(50deg) translateY(14px) translateX(5.5px);
+  transform: rotate(50deg) translateY(16px) translateX(5.5px);
   transition: all 0.3s;
 }
 
@@ -34,7 +47,7 @@
 }
 
 .burger_menu_clicked:nth-child(3) {
-  transform: rotate(130deg) translateY(12px) translateX(-4px);
+  transform: rotate(-50deg) translateY(-13px) translateX(2px);
   transition: all 0.3s;
 }
 
@@ -70,13 +83,13 @@
 }
 
 .button_clicked .icon_dropdown {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
   transition: all 200ms;
 }
 
 .button_unclicked .icon_dropdown {
   transition: all 200ms;
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 .grid_block_1 {
@@ -138,49 +151,4 @@ backdrop-filter: blur(151.58999633789062px);
   background-repeat: no-repeat;
   background-size: 100% 200vh;
   background-position: 100px 0;
-}
-
-.footer {
-  backdrop-filter: blur(1.3600000143051147px);
-}
-
-.button_unclicked_f {
-  display: block;
-  border-radius: 0px 200px 200px 0px;
-  padding: 0 30px;
-  min-height: 110px;
-  border: 10.2px solid #505050;
-  /* transform: scale(300px, 0);
-  transition: 2s all 0s ease-in-out; */
-  font-size: 32px;
-  /* position: absolute; */
-}
-
-.footer_links_unclicked {
-  max-width: 1036px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-}
-
-.footer_links_clicked {
-  display: block;
-  max-width: 1036px;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-  border-radius: 0px 200px 200px 0;
-  pad: 10px 20px;
-}
-
-.footer_links_unclicked {
-  display: none;
-}
-
-.button_clicked_f {
-  transform: scale(300px, 0);
-  transition: 2s all 0s ease-in-out;
-  display: none;  
 }
