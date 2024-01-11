@@ -15,30 +15,10 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 
 //For Swiper
 import React, { useEffect, useRef, useState } from "react";
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-// import required modules
-import { Pagination, Navigation } from "swiper/modules";
-
-//For Add Modal
-import Box from "@mui/material/Box";
-import Modal from "@mui/material/Modal";
 
 //For AOS animation
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-//For images
-// import imgS1 from "./assets/2Y3A9202.JPG";
-// import img1S5 from "./assets/IMG_1304.JPG";
-// import img2S5 from "./assets/IMG_1306.JPG";
-// import img3S5 from "./assets/IMG_1305.JPG";
 
 import imgS1 from "./assets/fotoONe.svg";
 import imgS2 from "./assets/twofoto.svg";
@@ -95,10 +75,10 @@ function App() {
 
   return (
     <div className="sm:px-[20px] lg:px-[60px] bg-[#000] dark:bg-[#fff]">
-      <header className="header flex justify-between items-center py-[10px] lg:rounded-[30px] sm:rounded-[30px_30px_0_0]">
+      <header className="header flex justify-between items-center py-[10px]  dark:bg-[#f0f0f0]">
         <div className="h_block_1 flex items-center gap-[21px]">
           <div className="logo_header bg-lightImg dark:bg-darkImg w-[86px] h-[72px] bg-no-repeat bg-[100%]"></div>
-          <h1 className="sm:hidden md:block text-[#fff] text-[22px] font-[400] dark:text-[#000] rye duration-300">
+          <h1 className="sm:hidden md:block text-[#fff] text-[22px] font-[400] dark:text-[#000] rye duration-300" data-aos="fade-down">
             {t("h.t1")}
           </h1>
         </div>
@@ -194,7 +174,7 @@ function App() {
         </div>
       </header>
       <nav
-        className={`navbar_for_mobile_size  lg:hidden py-[10px] ${menuClass} ${classAnimation}`}
+        className={`navbar_for_mobile_size  lg:hidden py-[10px] ${menuClass} ${classAnimation} dark:bg-[#f0f0f0]`}
       >
         <ul className="text-[#fff] dark:text-[#000] text-[20px] font-[400] flex flex-col gap-2 px-[20px] rye">
           <li className="">
