@@ -44,12 +44,21 @@
     "t2": "ECO-PLUS",
     "t3": "KAMIL-INDUSTRY",
     "t4": "SONGS",
-    "t5": "DISTRIBUTOR.TJ"
+    "t5": "DISTRIBUTOR.TJ",
+    "t6": "",
+    "t7": "",
+    "t8": "",
+    "t9": ""
   },
   "s6": {
     "t1": "SMI ABOUT ME",
     "t2":"HALVA.TJ",
     "t3": "MIR",
     "t4": "OVOZI TOJIK"
+  },
+  "inModalS5": {
+    "t1":"Songs",
+    "t2":"youtube",
+    "t3":"download"
   }
 }

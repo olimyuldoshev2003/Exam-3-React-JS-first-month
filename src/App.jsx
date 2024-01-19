@@ -6,6 +6,11 @@ import "./App.css";
 import { useTranslation } from "react-i18next";
 // import axios from "axios";
 
+
+//From material UI
+import Modal from "@mui/material/Modal";
+import Box from "@mui/material/Box";
+
 //For Icons
 import AddCircleIcon from "@mui/icons-material/AddCircle";
 import EditIcon from "@mui/icons-material/Edit";
@@ -26,6 +31,7 @@ import img1S5 from "./assets/ecoplus+.svg";
 import img2S5 from "./assets/Rectangle 13.png";
 import img3S5 from "./assets/Rectangle 15.png";
 import img4S5 from "./assets/20230708_215039_0000.png";
+import TabSongsAndVideos from "./components/TabSongsAndVideos/TabSongsAndVideos";
 
 function App() {
   const { t, i18n } = useTranslation();
@@ -45,7 +51,7 @@ function App() {
   const [changeMenu, setChangeMenu] = useState("burger_menu_unclicked");
   const [buttonMore, setButtonMore] = useState(false);
   const [classButtonMore, setClassButtonMore] = useState("button_unclicked");
-
+  const [openModalSongsAndVideos, setOpenModalSongsAndVideos] = useState(false)
 
   function showingMenu() {
     if (!showMenu) {
@@ -60,10 +66,6 @@ function App() {
     setShowMenu(!showMenu);
   }
 
-  function handleClose() {
-    setModalSignUp(false);
-  }
-
   function showMoreInformation() {
     if (!buttonMore) {
       setClassButtonMore("button_clicked");
@@ -73,12 +75,19 @@ function App() {
     setButtonMore(!buttonMore);
   }
 
+  function handleCloseModalSongsAndVideos() {
+    setOpenModalSongsAndVideos(false);
+  }
+
   return (
     <div className="sm:px-[20px] lg:px-[60px] bg-[#000] dark:bg-[#fff]">
-      <header className="header flex justify-between items-center py-[10px]  dark:bg-[#f0f0f0]">
+      <header className="header flex justify-between items-center py-[10px]">
         <div className="h_block_1 flex items-center gap-[21px]">
           <div className="logo_header bg-lightImg dark:bg-darkImg w-[86px] h-[72px] bg-no-repeat bg-[100%]"></div>
-          <h1 className="sm:hidden md:block text-[#fff] text-[22px] font-[400] dark:text-[#000] rye duration-300" data-aos="fade-down">
+          <h1
+            className="sm:hidden md:block text-[#fff] text-[22px] font-[400] dark:text-[#000] rye duration-300"
+            data-aos="fade-down"
+          >
             {t("h.t1")}
           </h1>
         </div>
@@ -174,7 +183,7 @@ function App() {
         </div>
       </header>
       <nav
-        className={`navbar_for_mobile_size  lg:hidden py-[10px] ${menuClass} ${classAnimation} dark:bg-[#f0f0f0]`}
+        className={`navbar_for_mobile_size  lg:hidden py-[10px] ${menuClass} ${classAnimation}`}
       >
         <ul className="text-[#fff] dark:text-[#000] text-[20px] font-[400] flex flex-col gap-2 px-[20px] rye">
           <li className="">
@@ -345,7 +354,10 @@ function App() {
             {t("s5.t1")}
           </h1>
           <div className="flex_block_s5 flex justify-center mt-[50px] flex-wrap gap-5">
-            <div className="flex_block_1 relative">
+            <div
+              className="flex_block_1 relative"
+              onClick={() => openDropdownProjects()}
+            >
               <p className="text-[#fff] md:text-[50px] sm:text-[32px] font-[700] text-center absolute top-[44%] md:left-[22%] sm:left-[19%] duration-300">
                 {t("s5.t2")}
               </p>
@@ -355,7 +367,10 @@ function App() {
                 alt=""
               />
             </div>
-            <div className="flex_block_2 relative">
+            <div
+              className="flex_block_2 relative"
+              onClick={() => openDropdownProjects()}
+            >
               <p className="text-[#fff] md:text-[50px] sm:text-[32px] font-[700] text-center absolute md:top-[44%] sm:top-[33%] md:left-[8%] sm:left-[10%] duration-300">
                 {t("s5.t3")}
               </p>
@@ -365,7 +380,10 @@ function App() {
                 alt=""
               />
             </div>
-            <div className="flex_block_3 relative">
+            <div
+              className="flex_block_3 relative cursor-pointer"
+              onClick={() => setOpenModalSongsAndVideos(true)}
+            >
               <p className="text-[#fff] md:text-[50px] sm:text-[32px] font-[700] text-center absolute top-[44%] left-[32%] duration-300">
                 {t("s5.t4")}
               </p>
@@ -386,6 +404,25 @@ function App() {
               />
             </div>
           </div>
+          <Modal
+            open={openModalSongsAndVideos}
+            onClose={handleCloseModalSongsAndVideos}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[400px] sm:w-[84%] rounded-[30px] outline-none bg-[#fff] h-[500px] px-[10px]">
+              <header className="header mt-[3px] flex justify-between items-center">
+                <h1 className="text-[22px] font-[700]">{t("inModalS5.t1")}</h1>
+                <button className="text-[39px]" onClick={()=>setOpenModalSongsAndVideos(false)}>&times;</button>
+              </header>
+              <section className="section">
+                <div className="for_tab">
+                  <TabSongsAndVideos/>
+                </div>
+              </section>
+            </Box>
+          </Modal>
         </section>
         <section className="section_6 mt-[60px]" id="aboutMe">
           <h1 className="text-[#ffab07] text-center lg:text-[40px] md:text-[35px] sm:text-[33px] font-[700] duration-300">
