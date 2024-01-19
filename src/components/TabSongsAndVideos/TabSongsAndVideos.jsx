@@ -81,42 +81,82 @@ export default function TabSongsAndVideos() {
       <CustomTabPanel value={value} index={0}>
         Item One
       </CustomTabPanel>
-      <CustomTabPanel value={value} index={1} className="h-[59.6vh] overflow-auto">
-        <div className="for_all_songs flex flex-col gap-4">
-          <div className="song_1">
+      <CustomTabPanel
+        value={value}
+        index={1}
+        className="h-[59.6vh] overflow-auto"
+      >
+        <div className="for_all_songs flex flex-col gap-5">
+          <div className="song_1 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              1. Ба пеш - Камиль Нурматов
+            </p>
             <audio src={songNumber1} className="w-[100%]" controls></audio>
           </div>
-          <div className="song_2">
+          <div className="song_2 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              2. Без лишних слов (feat JONY) - Камиль Нурматов
+            </p>
             <audio src={songNumber2} className="w-[100%]" controls></audio>
           </div>
-          <div className="song_3">
+          <div className="song_3 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              3. Вспомни - Камиль Нурматов
+            </p>
             <audio src={songNumber3} className="w-[100%]" controls></audio>
           </div>
-          <div className="song_4">
+          <div className="song_4 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              4. Имруз Хит 2023 - Камиль Нурматов
+            </p>
             <audio src={songNumber4} className="w-[100%]" controls></audio>
           </div>
-          <div className="song_5">
+          <div className="song_5 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              5. Ишки Аввал - Камиль Нурматов
+            </p>
             <audio src={songNumber5} className="w-[100%]" controls></audio>
           </div>
-          <div className="song_6">
+          <div className="song_6 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              6. Сенёрита - Камиль Нурматов
+            </p>
             <audio src={songNumber6} className="w-[100%]" controls></audio>
           </div>
-          <div className="song_7">
+          <div className="song_7 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              7. Кист сарсупурдаи ватан - Камиль Нурматов
+            </p>
             <audio src={songNumber7} className="w-[100%]" controls></audio>
           </div>
-          <div className="song_8">
+          <div className="song_8 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              8. Мой Рай - Камиль Нурматов
+            </p>
             <audio src={songNumber8} className="w-[100%]" controls></audio>
           </div>
-          <div className="song_9">
+          <div className="song_9 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              9. Потерпи - Камиль Нурматов
+            </p>
             <audio src={songNumber9} className="w-[100%]" controls></audio>
           </div>
-          <div className="song_10">
+          <div className="song_10 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              10. Хушбахтам - Камиль Нурматов
+            </p>
             <audio src={songNumber10} className="w-[100%]" controls></audio>
           </div>
-          <div className="song_11">
+          <div className="song_11 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              11. Ягона - Камиль Нурматов
+            </p>
             <audio src={songNumber11} className="w-[100%]" controls></audio>
           </div>
-          <div className="song_12">
+          <div className="song_12 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              12. Як табассум - Камиль Нурматов
+            </p>
             <audio src={songNumber12} className="w-[100%]" controls></audio>
           </div>
         </div>
