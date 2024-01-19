@@ -411,7 +411,7 @@ function App() {
             aria-describedby="modal-modal-description"
             className="flex justify-center  items-center"
           >
-            <Box className="md:w-[400px] sm:w-[84%] rounded-[30px] outline-none bg-[#fff] h-[500px] px-[10px]">
+            <Box className="md:w-[360px] sm:w-[84%] rounded-[30px] outline-none bg-[#fff] h-[500px] px-[10px]">
               <header className="header mt-[3px] flex justify-between items-center">
                 <h1 className="text-[22px] font-[700]">{t("inModalS5.t1")}</h1>
                 <button className="text-[39px]" onClick={()=>setOpenModalSongsAndVideos(false)}>&times;</button>
