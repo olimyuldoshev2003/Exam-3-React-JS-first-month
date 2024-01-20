@@ -86,7 +86,6 @@ function App() {
           <div className="logo_header bg-lightImg dark:bg-darkImg w-[86px] h-[72px] bg-no-repeat bg-[100%]"></div>
           <h1
             className="sm:hidden md:block text-[#fff] text-[22px] font-[400] dark:text-[#000] rye duration-300"
-            data-aos="fade-down"
           >
             {t("h.t1")}
           </h1>
