@@ -84,7 +84,7 @@ export default function TabSongsAndVideos() {
       <CustomTabPanel
         value={value}
         index={1}
-        className="h-[59.6vh] overflow-auto"
+        className="h-[390px] overflow-auto"
       >
         <div className="for_all_songs flex flex-col gap-5">
           <div className="song_1 flex flex-col gap-2">
