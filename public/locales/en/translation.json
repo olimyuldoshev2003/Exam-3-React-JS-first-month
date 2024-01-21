@@ -52,13 +52,27 @@
   },
   "s6": {
     "t1": "SMI ABOUT ME",
-    "t2":"HALVA.TJ",
+    "t2": "HALVA.TJ",
     "t3": "MIR",
     "t4": "OVOZI TOJIK"
   },
   "inModalS5": {
-    "t1":"Songs",
-    "t2":"youtube",
-    "t3":"download"
+    "t1": "Songs",
+    "t2": "youtube",
+    "t3": "download"
+  },
+  "songsInModalS5": {
+    "t1": "Ba pesh - Kamil Nurmatov",
+    "t2": "Bez lishnikh slov (feat JONY) - Kamil Nurmatov",
+    "t3": "Vspomni - Kamil Nurmatov",
+    "t4": "Imruz khit 2023 - Kamil Nurmatov",
+    "t5": "Ishqi Avval - Kamil Nurmatov",
+    "t6": "Senyorita - Kamil Nurmatov",
+    "t7": "Kist sarsupurdai vatan - Kamil Nurmatov",
+    "t8": "Moy ray - Kamil Nurmatov",
+    "t9": "Poterpi - Kamil Nurmatov",
+    "t10": "Khushbakhtam - Kamil Nurmatov",
+    "t11": "Yagona - Kamil Nurmatov",
+    "t12": "Yak tabassum - Kamil Nurmatov"
   }
 }

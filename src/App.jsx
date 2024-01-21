@@ -84,9 +84,7 @@ function App() {
       <header className="header flex justify-between items-center py-[10px]">
         <div className="h_block_1 flex items-center gap-[21px]">
           <div className="logo_header bg-lightImg dark:bg-darkImg w-[86px] h-[72px] bg-no-repeat bg-[100%]"></div>
-          <h1
-            className="sm:hidden md:block text-[#fff] text-[22px] font-[400] dark:text-[#000] rye duration-300"
-          >
+          <h1 className="sm:hidden md:block text-[#fff] text-[22px] font-[400] dark:text-[#000] rye duration-300">
             {t("h.t1")}
           </h1>
         </div>
@@ -410,14 +408,21 @@ function App() {
             aria-describedby="modal-modal-description"
             className="flex justify-center  items-center"
           >
-            <Box className="md:w-[360px] sm:w-[84%] rounded-[30px] outline-none bg-[#fff] h-[500px] px-[10px]">
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] h-[620px] px-[10px]">
               <header className="header mt-[3px] flex justify-between items-center">
-                <h1 className="text-[22px] font-[700]">{t("inModalS5.t1")}</h1>
-                <button className="text-[39px]" onClick={()=>setOpenModalSongsAndVideos(false)}>&times;</button>
+                <h1 className="text-[22px] font-[700] text-[#fff] dark:text-[#000]">
+                  {t("inModalS5.t1")}
+                </h1>
+                <button
+                  className="text-[39px] text-[#fff] dark:text-[#000] font-[500]"
+                  onClick={() => setOpenModalSongsAndVideos(false)}
+                >
+                  &times;
+                </button>
               </header>
               <section className="section">
                 <div className="for_tab">
-                  <TabSongsAndVideos/>
+                  <TabSongsAndVideos />
                 </div>
               </section>
             </Box>
