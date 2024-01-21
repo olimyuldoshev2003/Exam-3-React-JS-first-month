@@ -239,7 +239,7 @@ export default function TabSongsAndVideos() {
       <CustomTabPanel
         value={value}
         index={1}
-        className="h-[390px] overflow-auto"
+        className="h-[510px] overflow-auto"
       >
         <div className="for_all_songs flex flex-col gap-5 text-[#fff] dark:text-[#000]">
           <div className="song_1 flex flex-col gap-2">
@@ -248,75 +248,131 @@ export default function TabSongsAndVideos() {
             </p>
             <audio
               src={songNumber1}
-              className="w-[100%] text-[#000]"
+              className="w-[100%]"
               controls
+              id="chosenSong"
             ></audio>
           </div>
           <div className="song_2 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               2. {t("songsInModalS5.t2")}
             </p>
-            <audio src={songNumber2} className="w-[100%]" controls></audio>
+            <audio
+              src={songNumber2}
+              className="w-[100%]"
+              controls
+              id="chosenSong"
+            ></audio>
           </div>
           <div className="song_3 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               3. {t("songsInModalS5.t3")}
             </p>
-            <audio src={songNumber3} className="w-[100%]" controls></audio>
+            <audio
+              src={songNumber3}
+              className="w-[100%]"
+              controls
+              id="chosenSong"
+            ></audio>
           </div>
           <div className="song_4 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               4. {t("songsInModalS5.t4")}
             </p>
-            <audio src={songNumber4} className="w-[100%]" controls></audio>
+            <audio
+              src={songNumber4}
+              className="w-[100%]"
+              controls
+              id="chosenSong"
+            ></audio>
           </div>
           <div className="song_5 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               5. {t("songsInModalS5.t5")}
             </p>
-            <audio src={songNumber5} className="w-[100%]" controls></audio>
+            <audio
+              src={songNumber5}
+              className="w-[100%]"
+              controls
+              id="chosenSong"
+            ></audio>
           </div>
           <div className="song_6 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               6. {t("songsInModalS5.t6")}
             </p>
-            <audio src={songNumber6} className="w-[100%]" controls></audio>
+            <audio
+              src={songNumber6}
+              className="w-[100%]"
+              controls
+              id="chosenSong"
+            ></audio>
           </div>
           <div className="song_7 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               7. {t("songsInModalS5.t7")}
             </p>
-            <audio src={songNumber7} className="w-[100%]" controls></audio>
+            <audio
+              src={songNumber7}
+              className="w-[100%]"
+              controls
+              id="chosenSong"
+            ></audio>
           </div>
           <div className="song_8 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               8. {t("songsInModalS5.t8")}
             </p>
-            <audio src={songNumber8} className="w-[100%]" controls></audio>
+            <audio
+              src={songNumber8}
+              className="w-[100%]"
+              controls
+              id="chosenSong"
+            ></audio>
           </div>
           <div className="song_9 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               9. {t("songsInModalS5.t9")}
             </p>
-            <audio src={songNumber9} className="w-[100%]" controls></audio>
+            <audio
+              src={songNumber9}
+              className="w-[100%]"
+              controls
+              id="chosenSong"
+            ></audio>
           </div>
           <div className="song_10 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               10. {t("songsInModalS5.t10")}
             </p>
-            <audio src={songNumber10} className="w-[100%]" controls></audio>
+            <audio
+              src={songNumber10}
+              className="w-[100%]"
+              controls
+              id="chosenSong"
+            ></audio>
           </div>
           <div className="song_11 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               11. {t("songsInModalS5.t11")}
             </p>
-            <audio src={songNumber11} className="w-[100%]" controls></audio>
+            <audio
+              src={songNumber11}
+              className="w-[100%]"
+              controls
+              id="chosenSong"
+            ></audio>
           </div>
           <div className="song_12 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               12. {t("songsInModalS5.t12")}
             </p>
-            <audio src={songNumber12} className="w-[100%]" controls></audio>
+            <audio
+              src={songNumber12}
+              className="w-[100%]"
+              controls
+              id="chosenSong"
+            ></audio>
           </div>
         </div>
       </CustomTabPanel>
