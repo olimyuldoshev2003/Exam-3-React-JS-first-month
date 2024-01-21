@@ -239,7 +239,7 @@ function App() {
             </button>
           </div>
           <div className="s_1_block_2 relative">
-            <img src={imgS1} className="w-[627px]" alt="" />
+            <img src={imgS1} className="w-[627px]" alt="Kamil Nurmatov - first" />
             <div className="min_block_1_s_1_b_2 lg:w-[173px] lg:h-[173px] rounded-full bg-[#fff] grid place-items-center border-[5px] border-[solid] border-[#000] absolute lg:right-0 lg:bottom-[-10px] md:w-[123px] md:h-[123px] md:bottom-[10px] md:right-0 sm:w-[85px] sm:h-[85px] sm:bottom-[10px] sm:right-0 duration-300">
               <p className="text-[#000000] lg:text-[20px] font-[400] md:text-[16px] sm:text-[11px] duration-300">
                 {t("s1.t4")}
@@ -271,7 +271,7 @@ function App() {
           </h2>
           <div className="s_2_block mt-[30px] flex items-center media_query_s_2 gap-4">
             <div className="min_block_1_s_2">
-              <img src={imgS2} alt="" className="w-[627px]" />
+              <img src={imgS2} alt="Kamil Nurmatov - second" className="w-[627px]" />
             </div>
             <div className="min_block_2_s_2">
               <div className="birth lg:p-[27px_31.5px] md:p-[14px_26px] sm:p-[10px_20px] border-t-[1px] border-t-[solid] border-t-[#fff] dark:border-t-[#000]">
@@ -361,7 +361,7 @@ function App() {
               <img
                 className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%] duration-300"
                 src={img1S5}
-                alt=""
+                alt="Eko-Plus"
               />
             </div>
             <div
@@ -374,7 +374,7 @@ function App() {
               <img
                 className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%] duration-300"
                 src={img2S5}
-                alt=""
+                alt="Kamil-Industry"
               />
             </div>
             <div
@@ -387,7 +387,7 @@ function App() {
               <img
                 className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%] duration-300"
                 src={img3S5}
-                alt=""
+                alt="Songs"
               />
             </div>
             <div className="flex_block_4 relative">
@@ -397,7 +397,7 @@ function App() {
               <img
                 className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%] duration-300 rounded-[14px]"
                 src={img4S5}
-                alt=""
+                alt="Distributor.tj"
               />
             </div>
           </div>
@@ -465,7 +465,7 @@ function App() {
                 width="100%"
                 className="dark:border-[3px] dark:border-[solid] dark:border-[#000]"
                 height="800"
-                title="Kamil Nurmatov jumhuriyat"
+                title="Kamil Nurmatov in the world"
                 src="https://vot.tj/tj/?p=18907"
               ></iframe>
             </div>
