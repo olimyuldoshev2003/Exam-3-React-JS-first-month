@@ -408,7 +408,7 @@ function App() {
             aria-describedby="modal-modal-description"
             className="flex justify-center  items-center"
           >
-            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] h-[620px] px-[10px]">
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] h-[620px] overflow-auto px-[10px]">
               <header className="header mt-[3px] flex justify-between items-center">
                 <h1 className="text-[22px] font-[700] text-[#fff] dark:text-[#000]">
                   {t("inModalS5.t1")}

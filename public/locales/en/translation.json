@@ -59,7 +59,9 @@
   "inModalS5": {
     "t1": "Songs",
     "t2": "youtube",
-    "t3": "download"
+    "t3": "download",
+    "t4": "Play or download this song",
+    "t5":"Watch this video"
   },
   "songsInModalS5": {
     "t1": "Ba pesh - Kamil Nurmatov",
