@@ -18,6 +18,30 @@ import songNumber9 from "../../songs/потерпи 2023г.mp3";
 import songNumber10 from "../../songs/Хушбахтам .mp3";
 import songNumber11 from "../../songs/Ягона КамильНурматов.mp3";
 import songNumber12 from "../../songs/Як табассум~Камиль Нурматов.mp3";
+import songNumber13 from "../../songs/Наврӯз_2023_Тоҷикистон_Душанбе_Камиль_Нурматов_бо_суруди☆Имруз★.mp3";
+import songNumber14 from "../../songs/Ханда куни Камиль Нурматов.mp3";
+import songNumber15 from "../../songs/Kamil_Nurmatov+Bonu padarjon.mp3";
+import songNumber16 from "../../songs/Kamil_Nurmatov-Anisa.mp3";
+import songNumber17 from "../../songs/Shiddat Kamil_Nurmatov&Luas.mp3";
+import songNumber18 from "../../songs/Kamil_Nurmatov_mijgona_HAYOTI_MAN.mp3";
+import songNumber19 from "../../songs/Kamil_Nurmatov Бикан хдта.mp3";
+import songNumber20 from "../../songs/Параллели Kamil_Nurmatov x Bonu.mp3";
+import songNumber21 from "../../songs/Мара эҳтиёт кун  Kamil_Nurmatov.mp3";
+import songNumber22 from "../../songs/Оставила Kamil_Nurmatov & Nasiba.mp3";
+import songNumber23 from "../../songs/Kamil_Nurmatov_Siyo chashmak.mp3";
+import songNumber24 from "../../songs/Kamil_Nurmatov - Mahina - Мысли.mp3";
+import songNumber25 from "../../songs/ҲА БИГӮ ҶОНАМ Камиль Нурматов.mp3";
+import songNumber26 from "../../songs/Любишь_не_любишь_это_не_важно_Kamil_Nurmatov&Mahina.mp3";
+import songNumber27 from "../../songs/Kamil Nurmatov - Locomakarina.mp3";
+import songNumber28 from "../../songs/MOHI MAN Kamil Nurmatov.mp3";
+import songNumber29 from "../../songs/Мешавем мо якҷо Kamil_Nurmatov&Mahina.mp3";
+import songNumber30 from "../../songs/Kamil Nurmatov-majnun.mp3";
+import songNumber31 from "../../songs/Потухшие огни  Камиль_Нурматов&Барзу.mp3";
+import songNumber32 from "../../songs/Шодам Камиль Нурматов.mp3";
+import songNumber33 from "../../songs/Орзу бо ёд Luas&Dilnoza&Kamil.mp3";
+import songNumber34 from "../../songs/Тирамох Камиль Нурматов.mp3";
+import songNumber35 from "../../songs/Листы_календаря_1_Kamil_Nurmatov.mp3";
+import songNumber36 from "../../songs/Держи Камиль Нурматов.mp3";
 import { Modal } from "@mui/material";
 
 function CustomTabPanel(props) {
@@ -97,6 +121,12 @@ export default function TabSongsAndVideos() {
   const [modal28ForSongNumber28, setModal28ForSongNumber28] = useState(false);
   const [modal29ForSongNumber29, setModal29ForSongNumber29] = useState(false);
   const [modal30ForSongNumber30, setModal30ForSongNumber30] = useState(false);
+  const [modal31ForSongNumber31, setModal31ForSongNumber31] = useState(false);
+  const [modal32ForSongNumber32, setModal32ForSongNumber32] = useState(false);
+  const [modal33ForSongNumber33, setModal33ForSongNumber33] = useState(false);
+  const [modal34ForSongNumber34, setModal34ForSongNumber34] = useState(false);
+  const [modal35ForSongNumber35, setModal35ForSongNumber35] = useState(false);
+  const [modal36ForSongNumber36, setModal36ForSongNumber36] = useState(false);
 
   const [modal1ForVideoNumber1, setModal1ForVideoNumber1] = useState(false);
   const [modal2ForVideoNumber2, setModal2ForVideoNumber2] = useState(false);
@@ -122,12 +152,12 @@ export default function TabSongsAndVideos() {
   const [modal22ForVideoNumber22, setModal22ForVideoNumber22] = useState(false);
   const [modal23ForVideoNumber23, setModal23ForVideoNumber23] = useState(false);
   const [modal24ForVideoNumber24, setModal24ForVideoNumber24] = useState(false);
-  const [modal25ForVideoNumber25, setModal25ForVideoNumber25] = useState(false);
-  const [modal26ForVideoNumber26, setModal26ForVideoNumber26] = useState(false);
-  const [modal27ForVideoNumber27, setModal27ForVideoNumber27] = useState(false);
-  const [modal28ForVideoNumber28, setModal28ForVideoNumber28] = useState(false);
-  const [modal29ForVideoNumber29, setModal29ForVideoNumber29] = useState(false);
-  const [modal30ForVideoNumber30, setModal30ForVideoNumber30] = useState(false);
+  // const [modal25ForVideoNumber25, setModal25ForVideoNumber25] = useState(false);
+  // const [modal26ForVideoNumber26, setModal26ForVideoNumber26] = useState(false);
+  // const [modal27ForVideoNumber27, setModal27ForVideoNumber27] = useState(false);
+  // const [modal28ForVideoNumber28, setModal28ForVideoNumber28] = useState(false);
+  // const [modal29ForVideoNumber29, setModal29ForVideoNumber29] = useState(false);
+  // const [modal30ForVideoNumber30, setModal30ForVideoNumber30] = useState(false);
 
   return (
     <Box sx={{ width: "100%" }}>
@@ -315,15 +345,35 @@ export default function TabSongsAndVideos() {
               </button>
             </div>
           </div>
-          {/* <div className="video_11 flex flex-col gap-2">
+          {/* <div className="song_11 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               11. {t("songsInModalS5.t1")}
             </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal11ForVideoNumber11(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t5")}
+              </button>
+            </div>
           </div>
-          <div className="video_12 flex flex-col gap-2">
+          <div className="song_12 flex flex-col gap-2">
             <p className="text-[16px] font-[600]">
               12. {t("songsInModalS5.t1")}
             </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal12ForVideoNumber12(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t5")}
+              </button>
+            </div>
           </div> */}
 
           <Modal
@@ -638,7 +688,7 @@ export default function TabSongsAndVideos() {
               </div>
             </Box>
           </Modal>
-          <Modal
+          {/* <Modal
             open={modal11ForVideoNumber11}
             onClose={() => setModal11ForVideoNumber11(false)}
             aria-labelledby="modal-modal-title"
@@ -679,11 +729,11 @@ export default function TabSongsAndVideos() {
               </div>
               <div className="Video_12 flex flex-col gap-2">
                 <p className="text-[16px] font-[600]">
-                  {/* 12. {t("VideosInModalS5.t12")} */}
+                  12. {t("VideosInModalS5.t12")}
                 </p>
               </div>
             </Box>
-          </Modal>
+          </Modal> */}
         </div>
       </CustomTabPanel>
       <CustomTabPanel
@@ -872,6 +922,368 @@ export default function TabSongsAndVideos() {
               </button>
             </div>
           </div>
+
+          <div className="song_13 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              13. {t("songsInModalS5.t13")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal13ForSongNumber13(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_14 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              14. {t("songsInModalS5.t14")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal14ForSongNumber14(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_15 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              15. {t("songsInModalS5.t15")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal15ForSongNumber15(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_16 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              16. {t("songsInModalS5.t16")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal16ForSongNumber16(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_17 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              17. {t("songsInModalS5.t17")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal17ForSongNumber17(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_18 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              18. {t("songsInModalS5.t18")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal18ForSongNumber18(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_19 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              19. {t("songsInModalS5.t19")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal19ForSongNumber19(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_20 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              20. {t("songsInModalS5.t20")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal20ForSongNumber20(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_21 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              21. {t("songsInModalS5.t21")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal21ForSongNumber21(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_22 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              22. {t("songsInModalS5.t22")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal22ForSongNumber22(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_23 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              23. {t("songsInModalS5.t23")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal23ForSongNumber23(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_24 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              24. {t("songsInModalS5.t24")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal24ForSongNumber24(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_25 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              25. {t("songsInModalS5.t25")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal25ForSongNumber25(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_26 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              26. {t("songsInModalS5.t26")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal26ForSongNumber26(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_27 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              27. {t("songsInModalS5.t27")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal27ForSongNumber27(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_28 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              28. {t("songsInModalS5.t28")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal28ForSongNumber28(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_29 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              29. {t("songsInModalS5.t29")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal29ForSongNumber29(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_30 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              30. {t("songsInModalS5.t30")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal30ForSongNumber30(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_31 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              31. {t("songsInModalS5.t31")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal31ForSongNumber31(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_32 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              32. {t("songsInModalS5.t32")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal32ForSongNumber32(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_33 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              33. {t("songsInModalS5.t33")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal33ForSongNumber33(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_34 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              34. {t("songsInModalS5.t34")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal34ForSongNumber34(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_35 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              35. {t("songsInModalS5.t35")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal35ForSongNumber35(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+          <div className="song_36 flex flex-col gap-2">
+            <p className="text-[16px] font-[600]">
+              36. {t("songsInModalS5.t36")}
+            </p>
+            <div className="for_btn">
+              <button
+                onClick={() => {
+                  setModal36ForSongNumber36(true);
+                }}
+                className="bg-[#fff] text-[#242323] dark:text-[#fff] dark:bg-[#242323] outline-none p-[5px_20px] rounded-[20px] max-w-[230px]"
+              >
+                {t("inModalS5.t4")}
+              </button>
+            </div>
+          </div>
+
           {/* Modal number 1 for the song number 1 */}
           <Modal
             open={modal1ForSongNumber1}
@@ -1215,6 +1627,702 @@ export default function TabSongsAndVideos() {
                 </p>
                 <audio
                   src={songNumber12}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal13ForSongNumber13}
+            onClose={() => setModal13ForSongNumber13(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal13ForSongNumber13(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_13 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  13. {t("songsInModalS5.t13")}
+                </p>
+                <audio
+                  src={songNumber13}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal14ForSongNumber14}
+            onClose={() => setModal14ForSongNumber14(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal14ForSongNumber14(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_14 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  14. {t("songsInModalS5.t14")}
+                </p>
+                <audio
+                  src={songNumber14}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal15ForSongNumber15}
+            onClose={() => setModal15ForSongNumber15(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal15ForSongNumber15(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_15 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  15. {t("songsInModalS5.t15")}
+                </p>
+                <audio
+                  src={songNumber15}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal16ForSongNumber16}
+            onClose={() => setModal16ForSongNumber16(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal16ForSongNumber16(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_16 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  16. {t("songsInModalS5.t16")}
+                </p>
+                <audio
+                  src={songNumber16}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal17ForSongNumber17}
+            onClose={() => setModal17ForSongNumber17(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal17ForSongNumber17(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_17 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  17. {t("songsInModalS5.t17")}
+                </p>
+                <audio
+                  src={songNumber17}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal18ForSongNumber18}
+            onClose={() => setModal18ForSongNumber18(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal18ForSongNumber18(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_18 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  18. {t("songsInModalS5.t18")}
+                </p>
+                <audio
+                  src={songNumber18}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal19ForSongNumber19}
+            onClose={() => setModal19ForSongNumber19(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal19ForSongNumber19(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_19 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  19. {t("songsInModalS5.t19")}
+                </p>
+                <audio
+                  src={songNumber19}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal20ForSongNumber20}
+            onClose={() => setModal20ForSongNumber20(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal20ForSongNumber20(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_20 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  20. {t("songsInModalS5.t20")}
+                </p>
+                <audio
+                  src={songNumber20}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal21ForSongNumber21}
+            onClose={() => setModal21ForSongNumber21(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal21ForSongNumber21(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_21 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  21. {t("songsInModalS5.t21")}
+                </p>
+                <audio
+                  src={songNumber21}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal22ForSongNumber22}
+            onClose={() => setModal22ForSongNumber22(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal22ForSongNumber22(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_22 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  22. {t("songsInModalS5.t22")}
+                </p>
+                <audio
+                  src={songNumber22}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal23ForSongNumber23}
+            onClose={() => setModal23ForSongNumber23(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal23ForSongNumber23(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_23 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  23. {t("songsInModalS5.t23")}
+                </p>
+                <audio
+                  src={songNumber23}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal24ForSongNumber24}
+            onClose={() => setModal24ForSongNumber24(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal24ForSongNumber24(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_24 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  24. {t("songsInModalS5.t24")}
+                </p>
+                <audio
+                  src={songNumber24}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal25ForSongNumber25}
+            onClose={() => setModal25ForSongNumber25(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal25ForSongNumber25(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_25 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  25. {t("songsInModalS5.t25")}
+                </p>
+                <audio
+                  src={songNumber25}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal26ForSongNumber26}
+            onClose={() => setModal26ForSongNumber26(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal26ForSongNumber26(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_26 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  26. {t("songsInModalS5.t26")}
+                </p>
+                <audio
+                  src={songNumber26}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal27ForSongNumber27}
+            onClose={() => setModal27ForSongNumber27(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal27ForSongNumber27(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_27 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  27. {t("songsInModalS5.t27")}
+                </p>
+                <audio
+                  src={songNumber27}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal28ForSongNumber28}
+            onClose={() => setModal28ForSongNumber28(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal28ForSongNumber28(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_28 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  28. {t("songsInModalS5.t28")}
+                </p>
+                <audio
+                  src={songNumber28}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal29ForSongNumber29}
+            onClose={() => setModal29ForSongNumber29(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal29ForSongNumber29(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_29 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  29. {t("songsInModalS5.t29")}
+                </p>
+                <audio
+                  src={songNumber29}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal30ForSongNumber30}
+            onClose={() => setModal30ForSongNumber30(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal30ForSongNumber30(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_30 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  30. {t("songsInModalS5.t30")}
+                </p>
+                <audio
+                  src={songNumber30}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal31ForSongNumber31}
+            onClose={() => setModal31ForSongNumber31(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal31ForSongNumber31(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_31 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  31. {t("songsInModalS5.t31")}
+                </p>
+                <audio
+                  src={songNumber31}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal32ForSongNumber32}
+            onClose={() => setModal32ForSongNumber32(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal32ForSongNumber32(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_32 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  32. {t("songsInModalS5.t32")}
+                </p>
+                <audio
+                  src={songNumber32}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal33ForSongNumber33}
+            onClose={() => setModal33ForSongNumber33(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal33ForSongNumber33(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_33 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  33. {t("songsInModalS5.t33")}
+                </p>
+                <audio
+                  src={songNumber33}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal34ForSongNumber34}
+            onClose={() => setModal34ForSongNumber34(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal34ForSongNumber34(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_34 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  34. {t("songsInModalS5.t34")}
+                </p>
+                <audio
+                  src={songNumber34}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal35ForSongNumber35}
+            onClose={() => setModal35ForSongNumber35(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal35ForSongNumber35(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_35 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  35. {t("songsInModalS5.t35")}
+                </p>
+                <audio
+                  src={songNumber35}
+                  className="w-[100%]"
+                  controls
+                  id="chosenSong"
+                ></audio>
+              </div>
+            </Box>
+          </Modal>
+          <Modal
+            open={modal36ForSongNumber36}
+            onClose={() => setModal36ForSongNumber36(false)}
+            aria-labelledby="modal-modal-title"
+            aria-describedby="modal-modal-description"
+            className="flex justify-center  items-center"
+          >
+            <Box className="md:w-[520px] sm:w-[84%] rounded-[30px] outline-none bg-[#242323] dark:bg-[#fff] px-[10px] text-[#fff] dark:text-[#000] h-[200px] p-[10px]">
+              <div className="for_btn_close_modal_1_for_songs flex justify-end">
+                <button
+                  className="text-[39px]"
+                  onClick={() => setModal36ForSongNumber36(false)}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="song_36 flex flex-col gap-2">
+                <p className="text-[16px] font-[600]">
+                  36. {t("songsInModalS5.t36")}
+                </p>
+                <audio
+                  src={songNumber36}
                   className="w-[100%]"
                   controls
                   id="chosenSong"
