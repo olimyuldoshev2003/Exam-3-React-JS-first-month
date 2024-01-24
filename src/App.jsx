@@ -25,6 +25,8 @@ import React, { useEffect, useRef, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+
+import logoHeader from "./assets/logo-header_light.svg";
 import imgS1 from "./assets/fotoONe.svg";
 import imgS2 from "./assets/twofoto.svg";
 import img1S5 from "./assets/ecoplus+.svg";
@@ -83,7 +85,10 @@ function App() {
     <div className="sm:px-[20px] lg:px-[60px] bg-[#000] dark:bg-[#fff]">
       <header className="header flex justify-between items-center py-[10px]">
         <div className="h_block_1 flex items-center gap-[21px]">
-          <div className="logo_header bg-lightImg dark:bg-darkImg w-[86px] h-[72px] bg-no-repeat bg-[100%]"></div>
+          {/* <div className="logo_header bg-lightImg dark:bg-darkImg w-[86px] h-[72px] bg-no-repeat bg-[100%]"></div> */}
+          <a href="#">
+            <img src={logoHeader} alt="" className="w-[57px] h-[57px]" />
+          </a>
           <h1 className="sm:hidden md:block text-[#fff] text-[22px] font-[400] dark:text-[#000] rye duration-300">
             {t("h.t1")}
           </h1>
@@ -239,7 +244,11 @@ function App() {
             </button>
           </div>
           <div className="s_1_block_2 relative">
-            <img src={imgS1} className="w-[627px]" alt="Kamil Nurmatov - first" />
+            <img
+              src={imgS1}
+              className="w-[627px]"
+              alt="Kamil Nurmatov - first"
+            />
             <div className="min_block_1_s_1_b_2 lg:w-[173px] lg:h-[173px] rounded-full bg-[#fff] grid place-items-center border-[5px] border-[solid] border-[#000] absolute lg:right-0 lg:bottom-[-10px] md:w-[123px] md:h-[123px] md:bottom-[10px] md:right-0 sm:w-[85px] sm:h-[85px] sm:bottom-[10px] sm:right-0 duration-300">
               <p className="text-[#000000] lg:text-[20px] font-[400] md:text-[16px] sm:text-[11px] duration-300">
                 {t("s1.t4")}
@@ -271,7 +280,11 @@ function App() {
           </h2>
           <div className="s_2_block mt-[30px] flex items-center media_query_s_2 gap-4">
             <div className="min_block_1_s_2">
-              <img src={imgS2} alt="Kamil Nurmatov - second" className="w-[627px]" />
+              <img
+                src={imgS2}
+                alt="Kamil Nurmatov - second"
+                className="w-[627px]"
+              />
             </div>
             <div className="min_block_2_s_2">
               <div className="birth lg:p-[27px_31.5px] md:p-[14px_26px] sm:p-[10px_20px] border-t-[1px] border-t-[solid] border-t-[#fff] dark:border-t-[#000]">
@@ -353,7 +366,6 @@ function App() {
           <div className="flex_block_s5 flex justify-center mt-[50px] flex-wrap gap-5">
             <div
               className="flex_block_1 relative"
-              onClick={() => openDropdownProjects()}
             >
               <p className="text-[#fff] md:text-[50px] sm:text-[32px] font-[700] text-center absolute top-[44%] md:left-[22%] sm:left-[19%] duration-300">
                 {t("s5.t2")}
@@ -366,14 +378,13 @@ function App() {
             </div>
             <div
               className="flex_block_2 relative"
-              onClick={() => openDropdownProjects()}
             >
               <p className="text-[#fff] md:text-[50px] sm:text-[32px] font-[700] text-center absolute md:top-[44%] sm:top-[33%] md:left-[8%] sm:left-[10%] duration-300">
                 {t("s5.t3")}
               </p>
               <img
-                className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[100%] duration-300"
-                src={img2S5}
+                className="md:w-[500px] md:h-[500px] sm:w-[100%] sm:h-[70vh] duration-300"
+                src={logoHeader}
                 alt="Kamil-Industry"
               />
             </div>
